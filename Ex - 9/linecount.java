@@ -2,11 +2,7 @@ package exp_9;
 
 import java.io.*;
 
-
 public class linecount {
-
-
-  
           
    public static void main(String[] args) {
       
@@ -15,16 +11,12 @@ public class linecount {
           System.out.println("Usage:   java LineCounts <file-names>");
           return;
       }
-      
        for (String arg : args) {
            System.out.print(arg + ":  ");
            countLines(arg);
-       }
-      
+       }  
    }  
-   
-   
-   
+     
    private static void countLines(String fileName) {
           
       BufferedReader in;  
@@ -53,8 +45,5 @@ public class linecount {
       }
       
       System.out.println(lineCount + " lines");
-   
    }  
-   
-
 }
